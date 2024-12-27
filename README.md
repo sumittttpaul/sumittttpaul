@@ -95,6 +95,11 @@ Here are some stats of top languages that I used to build projects:
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sumittttpaul&hide_title=true&bg_color=151B23&theme=algolia&hide_border=true&layout=compact)
 
 ## 📣 How about an Office quote before you go?
+> {office_quote}
+>
+> <p>{office_character}</p>
+
+Check back at the top of the hour for a new quote!
 
 ## 🎸 Music track
 Another fun fact: I ❤️ listening to music, and here's the last song I listened to:
