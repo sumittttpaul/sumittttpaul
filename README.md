@@ -33,6 +33,18 @@ All of my projects are released as open-source on GitHub, this includes some of 
 .&nbsp;.&nbsp;.&nbsp;[and more](https://github.com/sumittttpaul?tab=repositories) 
 
 I create most of my open-source projects to solve the challenges I encounter in life, with many more still waiting to be addressed. I am embarking on a quest to find solutions for each one, one problem at a time.
+```
+  ____                  ____                      
+ / __ \___  ___ ___    / __/__  __ _____________  
+/ /_/ / _ \/ -_) _ \  _\ \/ _ \/ // / __/ __/ -_) 
+\____/ .__/\__/_//_/ /___/\___/\_,_/_/  \__/\__/  
+   _/_/                  __  __   _               
+  / __/  _____ ______ __/ /_/ /  (_)__  ___ _     
+ / _/| |/ / -_) __/ // / __/ _ \/ / _ \/ _ `/ _ _ 
+/___/|___/\__/_/  \_, /\__/_//_/_/_//_/\_, (_|_|_)
+                 /___/                /___/       
+```
+In the pinned projects section, you will find some of my open-source projects that I've built in my free time as a hobby over the past four years. I've continuously learned the latest technologies and created projects not only for myself but also for friends, for which I received payment. Eventually, I transitioned into freelancing, developing numerous web apps across various genres, including ```e-commerce```, ```landing pages```, ```portfolios```, ```booking systems```, ```online marketing```, ```SaaS```, and more.
 
 ## 🚀 &nbsp;Languages and Tools
 These are all the languages and tools that I used to build the projects:
@@ -107,18 +119,6 @@ Another fun fact: I ❤️ listening to music, and here's the last song I listen
 
 ![Alt text](https://spotify-recently-played-readme.vercel.app/api?user=m4n1ck2xueipry3no1zn2hw0z&count=1)
 
-
-```
-  ____                  ____                      
- / __ \___  ___ ___    / __/__  __ _____________  
-/ /_/ / _ \/ -_) _ \  _\ \/ _ \/ // / __/ __/ -_) 
-\____/ .__/\__/_//_/ /___/\___/\_,_/_/  \__/\__/  
-   _/_/                  __  __   _               
-  / __/  _____ ______ __/ /_/ /  (_)__  ___ _     
- / _/| |/ / -_) __/ // / __/ _ \/ / _ \/ _ `/ _ _ 
-/___/|___/\__/_/  \_, /\__/_//_/_/_//_/\_, (_|_|_)
-                 /___/                /___/       
-```
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=65&section=footer"/>
 </p>
