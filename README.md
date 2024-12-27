@@ -10,7 +10,8 @@ This is the place where I opensource stuff and break things :joy:
 ## 🔗 &nbsp;**Connect with me**
 Connect with me through ```LinkedIn```, ```Twitter```, ```Stackoverflow``` and ```Instagram```
 
-&nbsp;&nbsp;&nbsp;<a href="https://linkedin.com/in/sumitttpaul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="sumitttpaul" height="30" width="40" /></a>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="https://linkedin.com/in/sumitttpaul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="sumitttpaul" height="30" width="40" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="mailto:sumitpaul.project@gmail.com" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="sumitttpaul" height="25" width="35" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://twitter.com/sumitttpaul_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="sumitttpaul_" height="30" width="40" /></a>&nbsp;&nbsp;&nbsp;
 <a href="https://stackoverflow.com/users/13163098/sumeet-kumar-paul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="4214976" height="30" width="40" /></a>&nbsp;&nbsp;&nbsp;
 <a href="https://instagram.com/sumitttpaul_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="sumitttpaul_" height="30" width="40" /></a>&nbsp;&nbsp;&nbsp;
@@ -96,7 +97,7 @@ Here are some stats of top languages that I used to build projects:
 ## 📣 How about an Office quote before you go?
 
 ## 🎸 Music track
-I ❤️ listening to music, and here's the last song I listened to:
+Another fun fact: I ❤️ listening to music, and here's the last song I listened to:
 
 ![Alt text](https://spotify-recently-played-readme.vercel.app/api?user=m4n1ck2xueipry3no1zn2hw0z&count=1)
 
@@ -112,3 +113,6 @@ I ❤️ listening to music, and here's the last song I listened to:
 /___/|___/\__/_/  \_, /\__/_//_/_/_//_/\_, (_|_|_)
                  /___/                /___/       
 ```
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=65&section=footer"/>
+</p>
