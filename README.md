@@ -44,7 +44,11 @@ I create most of my open-source projects to solve the challenges I encounter in 
 /___/|___/\__/_/  \_, /\__/_//_/_/_//_/\_, (_|_|_)
                  /___/                /___/       
 ```
-In the pinned projects section, you will find some of my open-source projects that I've built in my free time as a hobby over the past four years. I've continuously learned the latest technologies and created projects not only for myself but also for friends, for which I received payment. Eventually, I transitioned into freelancing, developing numerous web apps across various genres, including ```e-commerce```, ```landing pages```, ```portfolios```, ```booking systems```, ```online marketing```, ```SaaS```, and more.
+In the pinned projects section, you will find some of my open-source projects that I've built in my free time as a hobby over the past four years. I've continuously learned the latest technologies and created projects not only for myself but also for friends, for which I received payment. 
+
+Eventually, I transitioned into freelancing, developing numerous web apps across various genres, including ```e-commerce```, ```landing pages```, ```portfolios```, ```booking systems```, ```online marketing```, ```SaaS```, and more.
+
+You can read more about me and my open source journey at my LinkedIn profile: [sumitttpaul](https://www.linkedin.com/in/sumitttpaul/)
 
 ## 🚀 &nbsp;Languages and Tools
 These are all the languages and tools that I used to build the projects:
