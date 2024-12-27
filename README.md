@@ -111,12 +111,12 @@ Here are some stats of top languages that I used to build projects:
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sumittttpaul&hide_title=true&bg_color=151B23&theme=algolia&hide_border=true&layout=compact)
 
-## 📣 How about an Office quote before you go?
-> {office_quote}
+## 📣 How about an inspirational quote before you go?
+> The only way to do great work is to love what you do.
 >
-> <p>{office_character}</p>
+> _<p>- by Steve Jobs</p>_
 
-Check back at the top of the hour for a new quote!
+Absolutely! Steve Jobs has been a significant source of inspiration for me.
 
 ## 🎸 Music track
 Another fun fact: I ❤️ listening to music, and here's the last song I listened to:
