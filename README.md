@@ -112,7 +112,7 @@ Here are some stats of top languages that I used to build projects:
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sumittttpaul&hide_title=true&bg_color=151B23&theme=algolia&hide_border=true&layout=compact)
 
 ## 📣 How about an inspirational quote before you go?
-> The only way to do great work is to love what you do.
+> **The only way to do great work is to love what you do.**
 >
 > _<p>- by Steve Jobs</p>_
 
