@@ -16,21 +16,25 @@ Connect with me through ```LinkedIn```, ```Twitter```, ```Stackoverflow``` and `
 <a href="https://instagram.com/sumitttpaul_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="sumitttpaul_" height="30" width="40" /></a>&nbsp;&nbsp;&nbsp;
 
 ## ✨ &nbsp;About me
-I am a Full stack developer with skills in front-end and back-end development. Experienced in creating applications and working with teams. Focused on building efficient and user-friendly solutions
+I am a Full stack developer with skills in front-end and back-end development. Experienced in creating applications and working with teams. Focused on building efficient and user-friendly solutions.
 
 ### Projects
 All of my projects are released as open-source on GitHub, this includes some of my favourite projects:
 #### ● &nbsp;[Emotion Outfit](https://emotionoutfit.vercel.app)
-&nbsp;&nbsp;&nbsp;&nbsp;An e-commerce store where people can shop for apparel to enhance their attire and look good. This project features a unique and intriguing login flow inspired by the Windows setup. Visit [repo](https://github.com/sumittttpaul/Emotion-Outfit)
+&nbsp;&nbsp;&nbsp;&nbsp;An e-commerce store where people can shop for apparel to enhance their attire and look good. This project features a unique and intriguing login flow inspired by the Windows setup.
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=sumittttpaul&repo=Emotion-Outfit&icon_color=F7C03C&border_radius=10&bg_color=151B23&show_owner=true&theme=algolia&hide_border=true)](https://github.com/sumittttpaul/Emotion-Outfit)
 #### ● &nbsp;[Allison](https://www.youtube.com/watch?v=tWdmMSgJcY8)
-&nbsp;&nbsp;&nbsp;&nbsp;Meet Allison, an AI assistant chatbot inspired by Microsoft Cortana. Allison can play your desired music from YouTube, Spotify, and YouTube Music, provide weather updates, open apps, and deliver the latest business news. Visit [repo](https://github.com/sumittttpaul/Allison)
+&nbsp;&nbsp;&nbsp;&nbsp;Meet Allison, an AI assistant chatbot inspired by Microsoft Cortana. Allison can play your desired music from YouTube, Spotify, and YouTube Music, provide weather updates, open apps, and deliver the latest business news.
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=sumittttpaul&border_radius=10&icon_color=F7C03C&bg_color=151B23&repo=Allison&theme=algolia&show_owner=true&hide_border=true)](https://github.com/sumittttpaul/Allison)
 
 .&nbsp;.&nbsp;.&nbsp;[and more](https://github.com/sumittttpaul?tab=repositories) 
 
-I create most of my open-source projects to solve the challenges I encounter in life, with many more still waiting to be addressed. I am embarking on a quest to find solutions for each one, one problem at a time
+I create most of my open-source projects to solve the challenges I encounter in life, with many more still waiting to be addressed. I am embarking on a quest to find solutions for each one, one problem at a time.
 
 ## 🚀 &nbsp;Languages and Tools
-These are all the languages and tools that I used to build the project
+These are all the languages and tools that I used to build the projects:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -84,6 +88,18 @@ These are all the languages and tools that I used to build the project
 <a href="https://www.sqlite.org/" target="_blank"><img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/></a> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://travis-ci.org" target="_blank"><img src="https://www.vectorlogo.zone/logos/travis-ci/travis-ci-icon.svg" alt="travisci" width="40" height="40"/></a> 
+
+Here are some stats of top languages that I used to build projects:
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sumittttpaul&hide_title=true&bg_color=151B23&theme=algolia&hide_border=true&layout=compact)
+
+## 📣 How about an Office quote before you go?
+
+## 🎸 Music track
+I ❤️ listening to music, and here's the last song I listened to:
+
+![Alt text](https://spotify-recently-played-readme.vercel.app/api?user=m4n1ck2xueipry3no1zn2hw0z&count=1)
+
 
 ```
   ____                  ____                      
