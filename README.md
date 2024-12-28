@@ -48,7 +48,7 @@ In the pinned projects section, you will find some of my open-source projects th
 
 Eventually, I transitioned into freelancing, developing numerous web apps across various genres, including ```e-commerce```, ```landing pages```, ```portfolios```, ```booking systems```, ```online marketing```, ```SaaS```, and more.
 
-You can read more about me and my open source journey at my LinkedIn profile: [sumitttpaul](https://www.linkedin.com/in/sumitttpaul/)
+You can read more about me and my freelancing journey at my LinkedIn profile: [sumitttpaul](https://www.linkedin.com/in/sumitttpaul/)
 
 ## 🚀 &nbsp;Languages and Tools
 These are all the languages and tools that I used to build the projects:
