@@ -1,0 +1,43 @@
+name: Update Stats Widget
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs once daily at midnight
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create stats directory
+        run: mkdir -p stats
+
+      - name: Generate stats card for sumitapp
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=SumitApp&icon_color=F7C03C&border_radius=10&bg_color=151B23&show_owner=true&theme=algolia&hide_border=true
+          path: stats/sumitapp.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate stats card for emotion-outfit
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Emotion-Outfit&icon_color=F7C03C&border_radius=10&bg_color=151B23&show_owner=true&theme=algolia&hide_border=true
+          path: stats/emotion-outfit.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit Widgets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats/*.svg
+          git commit -m "Update Stats Widget" || exit 0
+          git push
