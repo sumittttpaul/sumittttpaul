@@ -69,7 +69,7 @@ Absolutely! Steve Jobs has been a significant source of inspiration for me.
 ## 🎸 Music track
 Another fun fact: I ❤️ listening to music, and here's the last song I listened to:
 
-![YT Music Widget](./music/now-playings.svg)
+![YT Music Widget](./music/now-playing.svg)
 
 <p align="center">
   <img src="./animated_wave.svg"/>
