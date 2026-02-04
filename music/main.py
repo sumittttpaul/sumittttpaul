@@ -15,10 +15,9 @@ THEME = {
 
 # Setup Auth
 if not os.path.exists("oauth.json"):
-    # FIX: Changed "YT_HEADERS_AUTH" to "HEADERS_AUTH" to match your Workflow file
-    if "HEADERS_AUTH" in os.environ:
+    if "YT_HEADERS_AUTH" in os.environ:
         with open("oauth.json", "w") as f:
-            f.write(os.environ["HEADERS_AUTH"])
+            f.write(os.environ["YT_HEADERS_AUTH"])
     else:
         print("Error: No oauth.json found. Check your YAML 'env' section.")
         exit(1)

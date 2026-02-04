@@ -24,7 +24,7 @@ jobs:
 
       - name: Generate Image
         env:
-          HEADERS_AUTH: ${{ secrets.YT_HEADERS_AUTH }}
+          YT_HEADERS_AUTH: ${{ secrets.YT_HEADERS_AUTH }}
         run: |
           cd music
           python main.py
