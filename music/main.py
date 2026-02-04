@@ -86,65 +86,145 @@ def generate_svg():
     output_file = "now-playing.svg"
 
     svg = f"""
-    <svg width="{width}" height="{height}" viewBox="0 0 {width} {height}"
+    <svg width="480" height="160" viewBox="0 0 480 160"
         xmlns="http://www.w3.org/2000/svg">
 
     <defs>
-        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#0f0f0f"/>
-        <stop offset="100%" stop-color="#181818"/>
+        <!-- Glass background -->
+        <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#1a1a1a"/>
+        <stop offset="100%" stop-color="#0f0f0f"/>
         </linearGradient>
 
+        <!-- Glow -->
+        <filter id="glow">
+        <feGaussianBlur stdDeviation="12" result="blur"/>
+        <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+        </filter>
+
+        <!-- Album clip -->
         <clipPath id="art">
-        <rect x="20" y="20" rx="10" ry="10" width="100" height="100"/>
+        <rect x="24" y="24" rx="12" ry="12" width="96" height="96"/>
         </clipPath>
     </defs>
 
-    <!-- Background -->
-    <rect width="100%" height="100%" rx="16" fill="url(#bg)"/>
+    <!-- Outer glow -->
+    <rect x="10" y="10" width="460" height="140" rx="22"
+            fill="#ff0033" opacity="0.12" filter="url(#glow)"/>
+
+    <!-- Card -->
+    <rect x="0" y="0" width="480" height="160" rx="22"
+            fill="url(#glass)" stroke="#ffffff10"/>
 
     <!-- Album shadow -->
-    <rect x="24" y="24" rx="10" ry="10" width="100" height="100"
-            fill="black" opacity="0.35"/>
+    <rect x="28" y="28" width="96" height="96" rx="12"
+            fill="#000" opacity="0.45"/>
 
     <!-- Album art -->
-    {"<image href='data:image/png;base64," + base64_image + "' x='20' y='20' width='100' height='100' clip-path='url(#art)'/>" if base64_image else ""}
+    <image href="data:image/png;base64,{base64_image}"
+            x="24" y="24" width="96" height="96"
+            clip-path="url(#art)"/>
 
     <!-- Title -->
-    <text x="140" y="55"
+    <text x="140" y="58"
             fill="#ffffff"
-            font-size="17"
+            font-size="18"
             font-weight="700"
-            font-family="system-ui, -apple-system, Segoe UI, Roboto">
-        {truncate_text(title, 35)}
+            font-family="system-ui, -apple-system, Segoe UI">
+        {truncate_text(title, 30)}
     </text>
 
     <!-- Artist -->
-    <text x="140" y="78"
-            fill="#aaaaaa"
+    <text x="140" y="82"
+            fill="#bbbbbb"
             font-size="14"
-            font-family="system-ui, -apple-system, Segoe UI, Roboto">
-        {truncate_text(artists, 40)}
+            font-family="system-ui">
+        {truncate_text(artists, 38)}
     </text>
 
-    <!-- Progress bar -->
-    <rect x="140" y="100" width="260" height="4" rx="2" fill="#333"/>
-    <rect x="140" y="100" width="160" height="4" rx="2" fill="#ff0033"/>
-
-    <!-- YouTube Music icon -->
-    <circle cx="415" cy="35" r="10" fill="#ff0033"/>
-    <polygon points="412,30 412,40 420,35" fill="white"/>
+    <!-- Progress -->
+    <rect x="140" y="104" width="260" height="4" rx="2" fill="#333"/>
+    <rect x="140" y="104" width="170" height="4" rx="2" fill="#ff0033"/>
 
     <!-- Footer -->
-    <text x="140" y="125"
-            fill="#666"
+    <text x="140" y="132"
+            fill="#777"
             font-size="10"
             font-family="system-ui">
-        🎧 Now Playing on YouTube Music
+        🎧 Now Playing · YouTube Music
     </text>
+
+    <!-- Play icon -->
+    <circle cx="435" cy="40" r="11" fill="#ff0033"/>
+    <polygon points="432,34 432,46 442,40" fill="white"/>
 
     </svg>
     """
+
+
+    # svg = f"""
+    # <svg width="{width}" height="{height}" viewBox="0 0 {width} {height}"
+    #     xmlns="http://www.w3.org/2000/svg">
+
+    # <defs>
+    #     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    #     <stop offset="0%" stop-color="#0f0f0f"/>
+    #     <stop offset="100%" stop-color="#181818"/>
+    #     </linearGradient>
+
+    #     <clipPath id="art">
+    #     <rect x="20" y="20" rx="10" ry="10" width="100" height="100"/>
+    #     </clipPath>
+    # </defs>
+
+    # <!-- Background -->
+    # <rect width="100%" height="100%" rx="16" fill="url(#bg)"/>
+
+    # <!-- Album shadow -->
+    # <rect x="24" y="24" rx="10" ry="10" width="100" height="100"
+    #         fill="black" opacity="0.35"/>
+
+    # <!-- Album art -->
+    # {"<image href='data:image/png;base64," + base64_image + "' x='20' y='20' width='100' height='100' clip-path='url(#art)'/>" if base64_image else ""}
+
+    # <!-- Title -->
+    # <text x="140" y="55"
+    #         fill="#ffffff"
+    #         font-size="17"
+    #         font-weight="700"
+    #         font-family="system-ui, -apple-system, Segoe UI, Roboto">
+    #     {truncate_text(title, 35)}
+    # </text>
+
+    # <!-- Artist -->
+    # <text x="140" y="78"
+    #         fill="#aaaaaa"
+    #         font-size="14"
+    #         font-family="system-ui, -apple-system, Segoe UI, Roboto">
+    #     {truncate_text(artists, 40)}
+    # </text>
+
+    # <!-- Progress bar -->
+    # <rect x="140" y="100" width="260" height="4" rx="2" fill="#333"/>
+    # <rect x="140" y="100" width="160" height="4" rx="2" fill="#ff0033"/>
+
+    # <!-- YouTube Music icon -->
+    # <circle cx="415" cy="35" r="10" fill="#ff0033"/>
+    # <polygon points="412,30 412,40 420,35" fill="white"/>
+
+    # <!-- Footer -->
+    # <text x="140" y="125"
+    #         fill="#666"
+    #         font-size="10"
+    #         font-family="system-ui">
+    #     🎧 Now Playing on YouTube Music
+    # </text>
+
+    # </svg>
+    # """
 
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(svg)
