@@ -63,7 +63,7 @@ def generate_svg():
         history = ytmusic.get_history()
     except Exception as e:
         print(f"⚠️ Auth or network error while fetching history: {e}")
-        return  # keep last SVG, don't fail workflow
+        return
 
     if not history:
         print("ℹ️ No history found (empty response)")
@@ -81,28 +81,76 @@ def generate_svg():
     thumbnail_url = last_watched["thumbnails"][-1]["url"]
     base64_image = image_to_base64(thumbnail_url)
 
+    # --- SVG CONFIG ---
     width, height = 450, 140
-    dwg = svgwrite.Drawing("now-playing.svg", size=(f"{width}px", f"{height}px"))
+    output_file = "now-playing.svg"
 
-    dwg.add(dwg.rect(insert=(0, 0), size=("100%", "100%"), rx=12, ry=12, fill="#030303"))
+    svg = f"""
+    <svg width="{width}" height="{height}" viewBox="0 0 {width} {height}"
+        xmlns="http://www.w3.org/2000/svg">
 
-    img_size, img_margin = 100, 20
-    text_x = 140
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#0f0f0f"/>
+        <stop offset="100%" stop-color="#181818"/>
+        </linearGradient>
 
-    if base64_image:
-        dwg.add(
-            dwg.image(
-                f"data:image/png;base64,{base64_image}",
-                insert=(img_margin, img_margin),
-                size=(img_size, img_size),
-            )
-        )
+        <clipPath id="art">
+        <rect x="20" y="20" rx="10" ry="10" width="100" height="100"/>
+        </clipPath>
+    </defs>
 
-    dwg.add(dwg.text(truncate_text(title, 35), insert=(text_x, 50), fill="#FFFFFF", font_size=18))
-    dwg.add(dwg.text(truncate_text(artists, 40), insert=(text_x, 75), fill="#AAAAAA", font_size=14))
+    <!-- Background -->
+    <rect width="100%" height="100%" rx="16" fill="url(#bg)"/>
 
-    dwg.save()
-    print("✅ Custom SVG Generated")
+    <!-- Album shadow -->
+    <rect x="24" y="24" rx="10" ry="10" width="100" height="100"
+            fill="black" opacity="0.35"/>
+
+    <!-- Album art -->
+    {"<image href='data:image/png;base64," + base64_image + "' x='20' y='20' width='100' height='100' clip-path='url(#art)'/>" if base64_image else ""}
+
+    <!-- Title -->
+    <text x="140" y="55"
+            fill="#ffffff"
+            font-size="17"
+            font-weight="700"
+            font-family="system-ui, -apple-system, Segoe UI, Roboto">
+        {truncate_text(title, 35)}
+    </text>
+
+    <!-- Artist -->
+    <text x="140" y="78"
+            fill="#aaaaaa"
+            font-size="14"
+            font-family="system-ui, -apple-system, Segoe UI, Roboto">
+        {truncate_text(artists, 40)}
+    </text>
+
+    <!-- Progress bar -->
+    <rect x="140" y="100" width="260" height="4" rx="2" fill="#333"/>
+    <rect x="140" y="100" width="160" height="4" rx="2" fill="#ff0033"/>
+
+    <!-- YouTube Music icon -->
+    <circle cx="415" cy="35" r="10" fill="#ff0033"/>
+    <polygon points="412,30 412,40 420,35" fill="white"/>
+
+    <!-- Footer -->
+    <text x="140" y="125"
+            fill="#666"
+            font-size="10"
+            font-family="system-ui">
+        🎧 Now Playing on YouTube Music
+    </text>
+
+    </svg>
+    """
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write(svg)
+
+    print("✅ SVG Generated:", output_file)
+
 
 # --------------------------------------------------
 
