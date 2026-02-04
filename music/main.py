@@ -61,13 +61,15 @@ def generate_svg():
     print("Fetching history...")
     try:
         history = ytmusic.get_history()
-        if not history:
-            print("No history found.")
-            return
-        last_watched = history[0]
     except Exception as e:
-        print(f"Error fetching history: {e}")
+        print(f"⚠️ Auth or network error while fetching history: {e}")
+        return  # keep last SVG, don't fail workflow
+
+    if not history:
+        print("ℹ️ No history found (empty response)")
         return
+
+    last_watched = history[0]
 
     title = last_watched.get("title", "Unknown")
     artists = (
