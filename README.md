@@ -72,5 +72,5 @@ Another fun fact: I ❤️ listening to music, and here's the last song I listen
 ![Alt text](https://spotify-recently-played-readme.vercel.app/api?user=m4n1ck2xueipry3no1zn2hw0z&count=1)
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=65&section=footer"/>
+  <img src="./animated_waves.svg"/>
 </p>
