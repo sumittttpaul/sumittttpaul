@@ -14,18 +14,13 @@ Connect with me through ```LinkedIn``` and ```Email```
 <a href="mailto:sumitpaul.work@gmail.com" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="sumitttpaul" height="25" width="35" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## ✨ &nbsp;About me
-Frontend Engineer focused on building production-grade React and Next.js applications with predictable UI behavior, safe state transitions, and lifecycle correctness.
+Software Engineer with 6+ years of experience specializing in frontend architecture using React, Next.js, and React Native.
 
-I work primarily on real-world frontend problems — debugging existing codebases, fixing edge-case failures, and improving UI reliability under stress conditions such as rapid user interactions, navigation changes, and async race scenarios.
+I build scalable, production-grade web and mobile applications with a strong focus on state management, real-time data handling, and performance optimization. My experience includes developing dashboards, IDE-style systems, e-commerce platforms, LMS solutions, and full-stack publishing tools.
 
-My day-to-day engineering focus includes:
-- Correct state updates during fast interactions and re-renders
-- Preventing stale UI caused by overlapping API requests
-- Cleanup-safe effects (event listeners, timers, async logic)
-- Click-outside handling and complex UI interaction rules
-- Rendering performance via memoization and stable callbacks
+I focus on designing predictable UI systems that remain reliable under asynchronous workflows, rapid user interactions, and real-world scale.
 
-I optimize for correctness and risk reduction, not clever abstractions — preferring minimal, safe fixes that stabilize production behavior.
+Interested in contributing to product-driven teams building high-performance, real-time, or AI-powered platforms.
 
 ## 🚀 Projects
 All of my projects are released as open-source on GitHub, this includes some of my favourite projects:
